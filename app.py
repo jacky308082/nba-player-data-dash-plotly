@@ -9,7 +9,7 @@ import numpy as np
 app = dash.Dash(__name__)
 server = app.server
 
-url = 'https://github.com/jacky308082/nba-player-data-dash-plotly/blob/master/2012-18_playerBoxScore.csv'
+url = 'https://raw.githubusercontent.com/jacky308082/nba-player-data-dash-plotly/master/2012-18_playerBoxScore.csv'
 df = pd.read_csv(url, parse_dates=['gmDate'])
 
 def selected_columns(df):
